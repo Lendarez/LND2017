@@ -29,6 +29,7 @@ ul {
 li {
 	background-color: gray;
 	font-family: "Courier New";
+	width: 600px;
 }
 
 a:first-of-type img {
