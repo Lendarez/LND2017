@@ -1,0 +1,37 @@
+
+
+
+h1 {
+	color: red;
+	font-family: "Arial";
+}
+
+p {
+	color: #B4264D;
+	font-family: "Times New Roman";
+}
+
+span:first-of-type{
+	font-weight: bold;
+	color: #7806FF;
+	font-size: 1.2em;
+}
+
+span:nth-child(2){
+	font-style: italic;
+	color: #38A531;
+}
+
+ul {
+	color: yellow;
+}
+
+li {
+	background-color: gray;
+	font-family: "Courier New";
+}
+
+a:first-of-type img {
+	width:600px;
+	height:213px;
+}
