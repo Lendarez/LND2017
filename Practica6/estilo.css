@@ -28,7 +28,3 @@ div > a:active {
 	border-style: outset;
 	background-color: #424949;
 }
-
-div > a:link:active{
-	background-color: red;
-}
