@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Practica 7</title>
+</head>
+<body>
+
+	<form>
+		
+		<fieldset>
+			<legend> Información personal </legend>
+			<label>Apellidos </label><input type="text" name="apellidos"><br />
+			<label>Nombre </label><input type="text" name="nombre"><br />
+			<label>Dirección </label><input type="text" name="dirección">
+
+		</fieldset>
+		<fieldset>
+			<legend>Sistema operativo</legend>
+			<select>
+				<option value="gl">GNU/Linux</option>
+				<option value="win">Windows</option>
+				<option value="mc">Mac OS</option>
+			</select>
+		</fieldset>
+		<fieldset>
+			<legend>Ordenador personal</legend>
+			<p>¿Tienes ordenador en tu casa?</p>
+			<input type="radio" name="pc"><label>Sí</label><br />
+			<input type="radio" name="pc" checked="1"><label>No</label>
+			<p>Si tienes ordenador describe sus características:</p>
+			<textarea rows="15" cols="75" placeholder="Cuanto más detallado mejor."></textarea>
+		</fieldset>
+	</form>
+
+</body>
+</html>

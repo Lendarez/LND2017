@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Practica 7</title>
+</head>
+<body>
+
+<form action="" method="POST">
+	<fieldset>
+		<legend>Información personal</legend>
+		<label>Nombre:</label><br />
+		<input type="text" name="nombre" autofocus="" placeholder="Nombre completo" required=""><label> *</label><br /> <br />
+		<label>Clave:</label><br />
+		<input type="password" name="pass" required=""><label> *</label><br /><br />
+		<label>Edad (mayor que 18:)</label><br />
+		<input type="number" name="edad" min="18" max="99" value="18"><br /><br />
+		<label>Correo-e:</label><br />
+		<input type="email" name="email"><br /><br />
+		<label>Página personal:</label><br />
+		<input type="url" name="url"><br /><br />
+		<input type="submit" name="enviar">
+		<input type="submit" name="aqui" onclick="alert('Mario Figueroa Álvarez');" value="Pulse aquí">
+
+	</fieldset>
+</form>
+
+</body>
+</html>
