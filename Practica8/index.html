@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Practica 8</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<script type="text/javascript">
+		window.onload = function() {
+			var files = document.querySelectorAll("input[type=file]");
+			files[0].addEventListener("change", function(e) {
+				if(this.files && this.files[0]) {
+					var reader = new FileReader();
+					reader.onload = function(e) { document.getElementById("preview").setAttribute("src", e.target.result); }
+					reader.readAsDataURL(this.files[0]);
+				}
+			});
+		}
+	</script>
+</head>
+<body>
+
+	<form action="" method="POST">
+		
+		<fieldset>
+			<legend>Tú cara</legend>
+			<label>Foto:</label><input class="mover" type="file" name="archivo" required=""><br />
+			<label>Previsualización de la imagen:</label><br /><img src="" id="preview">
+		</fieldset>
+
+		<fieldset>
+			<legend>Datos generales</legend>
+			<label>Nombre: </label><input class="mover" type="text" name="nombre" placeholder="Nombre completo" required=""><br />
+			<label>Género:</label> <div><input type="radio" name="genero" required=""><label>Hombre </label><input type="radio" name="genero"><label>Mujer</label></div>
+			<label>Edad: </label><input type="number" name="edad" min="18" max="99" value="18"><br />
+			<label>Fecha de nacimiento: </label> <input type="date" name="fecha"><br />
+			<label>Color favorito: </label> <input type="color" name="color"><br />
+			<label>País</label>
+			<select>
+				<option>España</option>
+				<option>Francia</option>
+				<option>Italia</option>
+				<option>Otros</option>
+			</select>
+		</fieldset>
+
+		<fieldset>
+			<legend>Otras características</legend>
+			<label>Altura: </label> <div><span class="rojo"><label>Bajo</label></span><input type="range" name="altura" min="0,30" max="2,50"><span class="morado"><label>Alto</label></span></div>
+			<label>Salario:</label> <div><span class="rojo"><label>Pobre</label></span><input type="range" name="salario"><span class="morado"><label>Rico</label></span></div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Información de contacto</legend>
+			<label>Email: </label><input type="email" name="correo-e" required=""><br />
+			<label>Móvil: </label><input type="tel" name="telefono"><br />
+			<label>Dirección: </label> <textarea rows="5" cols="40"></textarea><br />
+			<label>Método de contacto: </label><div><input type="checkbox" name="email"><label>Email</label> <input type="checkbox" name="whatsapp"> <label>Whatsapp</label><input type="checkbox" name="skype"><label>Skype</label></div>
+		</fieldset>
+
+		<input type="submit" name="enviar" >
+	</form>
+
+</body>
+</html>

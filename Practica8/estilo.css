@@ -1,0 +1,24 @@
+fieldset {
+	border-color: #E9FF00;
+	border-width: 10px;
+	border-style: solid;
+	background-color: #FAFFDC;
+	margin: 10px;
+}
+
+label:hover {
+ font-size: 1.5em;
+}
+
+fieldset > label {
+  width: 25%;
+  float: left;
+}
+
+.rojo {
+	background-color: red;
+}
+
+.morado {
+ background-color: #7400FF;
+}
