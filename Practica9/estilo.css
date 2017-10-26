@@ -1,0 +1,101 @@
+h1.ejercicio_001 {
+	margin-left: 40px;
+}
+
+h1.ejercicio_002 {
+	padding: 10px 20px;
+	clear: top;
+}
+
+body > header.ejercicio_002 {
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+
+
+nav.ejercicio_001 li  {
+	display: inline;
+
+}
+
+nav.ejercicio_001 li > a {
+	background-color: black;
+	color: white;
+	padding: 10px 15px;
+	border-radius: 6px  6px 0px 0px;
+	text-decoration: none;
+}
+
+nav.ejercicio_001 li > a:hover {
+	background-color: red;
+}
+
+nav.ejercicio_002 {
+	float: left;
+	width: 100px;
+	height: 300px;
+	background-color: lightgray;
+	position: relative;
+	top: -22px;
+}
+
+nav.ejercicio_002 a {
+	text-decoration: none;
+}
+
+nav.ejercicio_002 ul {
+	list-style-type: none;
+	position: relative;
+	left: -35px;
+	top: -15px;
+}
+
+nav.ejercicio_002 li {
+	padding: 5px 0px;
+}
+
+main.ejercicio_002 {
+	float: left;
+	width: 500px;
+	position: relative;
+	top: -22px;
+}
+
+footer.ejercicio_002 {
+	text-align: center;
+	clear: left;
+	background-color: black;
+	color: white;
+	padding: 5px 0px;
+}
+
+iframe {
+	width: 800px;
+	height: 600px;
+}
+
+body > main > div {
+	text-align: center;
+	margin-top: 10px;
+}
+
+div > a {
+	text-decoration: none;
+	padding: 10px 15px;
+	border-radius: 5px;
+	border-style: inset;
+	background-color: #E5E8E8;
+	border-color: #AAB7B8;
+	color: black;
+}
+
+div > a:hover {
+	background-color: #99A3A4;
+}
+
+div > a:active {
+	color: white;
+	border-style: outset;
+	background-color: #424949;
+}
