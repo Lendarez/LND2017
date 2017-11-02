@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Language" content="es-ES"/>
+	<meta name="Keywords" content=""/>
+	<meta name="Description" content=""/>
+	<meta name="Distribution" content="Global"/>
+	<meta name="author" content="Mario Figueroa Álvarez">
+	<meta name="title" content="Ejercicio 3 - Selectores.">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<title>Ejercicio 3 - Selectores.</title>
+</head>
+<body>
+	<header>
+		<p>Para poder ver la respuesta haga click en la 
+			<picture class="ejercicio1">
+				<source srcset="./img/idea.png" media="(min-width:640px)">
+					<img src="./img/idea.png">
+				</picture>
+			</article>
+			de cada ejercicio.
+		</p>
+	</header>
+	<nav>
+		
+	</nav>
+	<main>
+
+		<article>
+			<header><h1>Ejercicio 1</h1></header>
+
+			<p>A partir de la siguiente regla CSS:</p>
+
+			<div><code> p > span { color: blue; } </code></div>
+
+			<p>Y el siguiente código HTML:</p>
+
+			<div>
+				<code>	
+					&ltp>&ltspan>Texto1&lt/span>&lt/p><br />
+					&ltp>&lta href="#">&ltspan>Texto2&lt&lt/span>&lt/a>&lt/p>
+				</code>
+			</div>
+			
+
+			<p>Explica la salida por pantalla. No indiques qué es lo que sale por pantalla, sino por qué se produce esa salida.</p>
+			<picture class="ejercicio1">
+				<source srcset="./img/idea.png" media="(min-width:640px)">
+					<img src="./img/idea.png">
+				</picture>
+			</article>
+
+			<article>
+				<header><h1>Ejercicio 2</h1></header>
+
+				<p>A partir de la siguiente regla CSS:</p>
+
+				<div><code>p a { color: red; }</code></div>
+
+				<p>Y el siguiente código HTML:</p>
+
+				<div>
+					<code>
+						&ltp>&lta href="#">Enlace1&lt/a>&lt/p><br>
+						&ltp>&ltspan>&lta href="#">Enlace2&lt/a>&lt/span>&lt/p><br>
+						&ltp>&lta href="#">&ltspan>Texto2&lt/span>&lt/a>&lt/p>
+					</code>
+				</div>
+
+				<p>Explica la salida por pantalla.</p>
+				<picture class="ejercicio2">
+					<source srcset="./img/idea.png" media="(min-width:640px)">
+						<img class="hola" src="./img/idea.png">
+					</picture>
+				</article>
+
+				<article>
+					<header><h1>Ejercicio 3</h1></header>
+
+					<p>A partir de la siguiente regla CSS:</p>
+
+					<div><code>p > a { color: red; }</code></div>
+
+					<p>Y el siguiente código HTML:</p>
+
+					<div>	
+						<code>
+							&ltp>&lta href="#">Enlace1&lt/a>&lt/p><br>
+							&ltp>&ltspan>&lta href="#">Enlace2&lt/a>&lt/span>&lt/p><br>
+							&ltp>&lta href="#">&ltspan>Texto2&lt/span>&lt/a>&lt/p>
+						</code>
+					</div>
+
+					<p>Explica la salida por pantalla. ¿Cuáles son las diferencias con el selector de la pregunta anterior?</p>
+					<picture class="ejercicio3">
+						<source srcset="./img/idea.png" media="(min-width:640px)">
+							<img src="./img/idea.png">
+						</picture>
+					</article>
+
+					<article>
+						<header><h1>Ejercicio 4</h1></header>
+
+						<p>A partir de la siguiente regla CSS:</p>
+
+						<div><code>h1 + h2 { color: red }</code></div>
+
+						<p>Y el siguiente código HTML:</p>
+
+						<div>
+							<code>
+								&ltbody><br>
+
+								&lth1>Titulo1&lt/h1><br>
+
+								&lth2>Subtítulo&lt/h2><br>
+
+								...<br>
+
+								&lth2>Otro subtítulo&lt/h2><br>
+
+								...<br>
+
+								&lt/body><br>
+							</code>
+						</div>
+						<p>Explica la salida por pantalla.</p>
+						<picture class="ejercicio4">
+							<source srcset="./img/idea.png" media="(min-width:640px)">
+								<img src="./img/idea.png">
+							</picture>
+						</article>
+
+						<article>
+							<header><h1>Ejercicio 5</h1></header>
+
+							<p>Crea una página HTML que tenga dos enlaces a dos páginas externas. Aplícale las siguientes reglas:</p>
+							<div>
+								<code>
+									a:link {color: red;}<br>
+									a:visited {color: blue;}<br>
+									a:hover {color: fuchsia;}
+								</code>
+							</div>
+							<p>Explica para qué sirve cada una de ellas.</p>
+							<picture class="ejercicio5">
+								<source srcset="./img/idea.png" media="(min-width:640px)">
+									<img src="./img/idea.png">
+								</picture>
+							</article>
+
+							<article>
+								<header><h1>Ejercicio 6</h1></header>
+
+								<p>Elimina las reglas anteriores. Aplícale las siguiente y explica para qué sirven.</p>
+								<div>
+									<code>
+										a:link {color: red; text-decoration: none;}<br>
+										a:visited {color: blue; text-decoration: none;}<br>
+										a:hover {color: red; text-decoration: underline;}
+									</code>
+								</div>
+								<picture class="ejercicio6">
+									<source srcset="./img/idea.png" media="(min-width:640px)">
+										<img src="./img/idea.png">
+									</picture>
+								</article>
+
+								<article>
+									<header><h1>Ejercicio 7</h1></header>
+
+									<p>Crea una página HTML que tenga un párrafo de varias líneas. Aplícale las siguientes reglas y explica para qué sirven:</p>
+									<div>
+										<code>
+											p:first-line {letter-spacing: 6pt;}<br>
+											p.definicion:first-letter {font-size: 300%; color: red; }
+										</code>
+									</div>
+									<picture class="ejercicio7">
+										<source srcset="./img/idea.png" media="(min-width:640px)">
+											<img src="./img/idea.png">
+										</picture>
+									</article>
+
+									<article>		
+										<header><h1>Ejercicio 8</h1></header>
+
+										<p>A partir de las siguientes reglas CSS:</p>
+										<div>
+											<code>
+												body { font-family: Arial; color: black; }<br>
+												h1 { font-family: Verdana; }<br>
+												p { color: red; }
+											</code>
+										</div>
+
+										<p>Y del siguiente código HTML:</p>
+										<div>
+											<code>
+												&ltbody><br>
+												&lth1>Titular de la página&lt/h1><br>
+												&ltp>Un párrafo de texto.&lt/p><br>
+												&lt/body>
+											</code>
+										</div>
+
+										<p>¿Se aplica la herrencia a algún elemento? Si es así, ¿Qué propiedades se heredan?</p>
+										<picture class="ejercicio8">
+											<source srcset="./img/idea.png" media="(min-width:640px)">
+												<img src="./img/idea.png">
+											</picture>
+										</article>
+
+										<article>
+											<header><h1>Ejercicio 9</h1></header>
+
+											<p>A partir de las siguientes reglas CSS:</p>
+											<div>
+												<code>
+													p { color: red; }<br>
+													p { color: blue; }
+												</code>
+											</div>
+
+											<p>Y del siguiente código HTML:</p>
+											<div>
+												<code>
+													<p>Cuál es mi color?</p>
+												</code>
+											</div>	
+											<p>¿Cuál es la salida? ¿Por qué?</p>
+											<picture class="ejercicio9">
+												<source srcset="./img/idea.png" media="(min-width:640px)">
+													<img src="./img/idea.png">
+												</picture>
+											</article>
+
+											<article>
+												<header><h1>Ejercicio 10</h1></header>
+
+												<p>A partir de las siguientes reglas CSS:</p>
+												<div>
+													<code>
+														p { color: red; }<br>
+														p#especial { color: green; }<br>
+														* { color: blue; }
+													</code>
+												</div>
+
+												<p>Y del siguiente código HTML:</p>
+												<div>
+													<code>
+														&ltp id="especial">Soy especial.&lt/p>
+													</code>
+												</div>	
+												<p>¿Cuál es la salida? ¿Por qué?</p>
+												<picture class="ejercicio10">
+													<source srcset="./img/idea.png" media="(min-width:640px)">
+														<img src="./img/idea.png">
+													</picture>
+												</article>
+
+											</main>
+											<footer>
+
+											</footer>
+										</body>
+										</html>

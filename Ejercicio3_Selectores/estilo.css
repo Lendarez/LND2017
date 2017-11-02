@@ -1,0 +1,103 @@
+body {
+	background-color: #ECE3D9;
+}
+
+header p {
+	text-align: center;
+	font-size: 20px;
+}
+
+article {
+	background-color: #C6BFB9;
+	padding: 15px;
+	margin: 30px 10px;
+	border-style: ridge;
+	border-color: #3C4C5C;
+	border-width: 10px;
+	border-radius: 5px;
+}
+
+header > h1 {
+	text-align: center;
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+div {
+	border-style: ridge;
+	border-width: 7px;
+	border-color: #E6E6E6;
+	border-radius: 7px;
+	background-color: black;
+	color: white;
+	width: 500px;
+	text-align: left;
+	margin: 5px auto;
+	padding: 10px;
+}
+
+main img {
+	background-color: rgba(255,255,255,0.3);
+	padding: 5px;
+	border-radius: 200px;
+	margin: auto;
+	display: block;
+}
+
+main img:hover {
+	background-color: rgba(255,255,255,0.7);
+}
+
+ main picture:active::before {
+	position: fixed;
+	left: 2.1%;
+	top: 1%;
+	margin: auto;
+	border-radius: 5px;
+	background-color: rgba(50,50,50,0.8);
+	color: white;
+	width: 95.1%;
+	padding: 5px;
+	text-align: center;
+	font-size: 20px;
+} 
+
+main picture.ejercicio1:active::before {
+	content: "En este caso el estilo solo se aplicará a la primera lineas. Esto es debido a que el codigo de estilo solo afectará a los <spam> hijos directos de <p> y la segunda linea HTML tiene una etiqueta <a> entre <p> y <spam> imposibilitando así que no se cumpla la regla marcada en el codigo CSS.";
+}
+
+main picture.ejercicio2:active::before {
+	content: "En este caso el estilo se aplicará a todas las lineas del codigo. Esto es debido a que este estilo está diseñado para que actúe en todas la etiquetas <a> que se encuentren dentro de <p> indepentiendemente si son hijos directos o su nivel dentro del mismo.";
+}
+
+main picture.ejercicio3:active::before {
+	content: "En este caso el estilo se aplicará a la primera y ultima linea del codigo HTML. Esto es debido a que hemos usado el selector ' > ' entre la etiqueta <p> y <a> para que así solo afecte a las etiquetas <a> que son hijos directos de las etiquetas <p>."  ;
+}
+
+main picture.ejercicio4:active::before {
+	content: "En este caso el estilo solo se aplicará a la 3 linea. Esto es debido a que hemos usado el selector ' + ' el cual actua de forma similar al selector ' > ' pero con la particularidad de que este solo afectará al primer hijo del selector que hayamos designado. Si más adelante en el codigo HTML encontramos más hijos directo del primer selector y con independencia de su nivel en el mismo a este no se le aplicará el estilo marcado." ;
+}
+
+main picture.ejercicio5:active::before {
+	content: "Si usamos ' a:link ' podremos modificar el estilo de los link por defecto los cuales no hayamos visitado. Para el caso de ' a:visited ' modificaremos el estilo de los link ya visitados. Y por ultimo si usamos ' a:hover ' cambiaremos el estilo de los links los cuales tengan el puntero sobre él.";
+}
+
+main picture.ejercicio6:active::before {
+	content: "En el primero de los casos el link cambiará su color por defecto a rojo y perderá todos los estilos de texto que tenga aplicados. En el segundo caso pasará igual que en el caso anterior pero el color por defecto pasará a ser azúl, y en el ultimo caso el texto ganará un estilo de texto de subrayado y su color pasará a ser rojo.";
+}
+
+main picture.ejercicio7:active::before {
+	content: "Con la primera linea de estilo haremos que todos los <p> tengan un espaciado de 6 puntos en su primera linea y con la segunda regla de estilo haremos que todos los <p> que pertenezcan a la clase ' definicion ' tengan su primera letra aumentada un 300% y su color pasará a ser rojo. ";
+}
+
+main picture.ejercicio8:active::before {
+	content: "En este caso se heredará todo aquel estilo que no entre en conflicto con los mismos de cada estiqueta. En el caso de <h1> solo heredará el color de la etiqueta <body>, pues el estilo de letra entra en conflicto y siempre prevalece el estilo de la misma etiqueta si esta entra en conflico con otra regla heredada de un elemento padre. En el segundo caso solo se heredará el estilo de letra, pues la otra regla heredada entra en conflicto con la regla definida en su propia etiqueta.";
+}
+
+main picture.ejercicio9:active::before {
+	content: "En el caso de que dos reglas de estilo tengan conflicto entre sí se aplicará la ultima regla definida, quedando de color azúl el texto pues es el ultimo estilo definido.";
+}
+
+main picture.ejercicio10:active::before {
+	content: "En este caso todo el texto pasará a ser de color verde. Esto es así ya que la regla usada para definir este estilo es más estricto que las dos otras reglas. En el caso de que esta regla de estilo no existiera se cumpliría la regla numero uno, pues la misma es más rectristiba que la ultima regla definida. Y en el caso de que existiera una regla para la misma etiqueta y una se defina con un 'id' y otra con una 'class' prevalecerá la que tiene un 'id' pues es el mas restrictivo de todos. ";
+}
