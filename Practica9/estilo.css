@@ -61,6 +61,13 @@ main.ejercicio_002 {
 	position: relative;
 	top: -22px;
 }
+main.ejercicio_002 p {
+	padding-left: 15px;
+}
+
+main.ejercicio_002 header {
+	padding-left: 15px;
+}
 
 footer.ejercicio_002 {
 	text-align: center;
