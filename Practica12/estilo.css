@@ -198,7 +198,7 @@ article img{
 
 	}
 
-	main article:first-of-type, main article:nth-child(2){
+	main article:first-of-type, main article:nth-child(even){
 		margin-left: 2%;
 		margin-right: 2%;
 		margin-bottom: 4%;
@@ -206,10 +206,11 @@ article img{
 
 	}
 
-	article:last-of-type{
+	input[id="Sushi"] + article{
 		margin-left: 2%;
 		margin-right: 2%;
 		margin-bottom: 5%;
+		width: 96%;
 	}
 
 	article:hover img{
@@ -242,9 +243,12 @@ article img{
 		filter: none;
 	}
 
+	form{
+		display: none;
+	}
+
 	img{
 		width: 35%;
 	}
 
 }
-
