@@ -143,7 +143,20 @@ article div:nth-of-type(2) img{
 	width: 128px;
 }
 
-article div{
+article p ~ div{
 	text-align: center;
 	margin: 10px auto;
 }
+
+article br ~ p{
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Atomic+Age');
+
+article div > p:last-of-type{
+	font-family: 'Atomic Age';
+}
+
+
+
