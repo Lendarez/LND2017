@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Language" content="es-ES"/>
+	<meta name="Keywords" content=""/>
+	<meta name="Description" content=""/>
+	<meta name="Distribution" content="Global"/>
+	<meta name="author" content="">
+	<meta name="title" content="Práctica 13">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<title>Práctica 13</title>
+</head>
+<body>
+	<header>
+		<h1>Practica 13</h1>
+	</header>
+	<nav>
+		
+	</nav>
+	<main>
+		<section>
+			<article>
+				<header><h1>Resets</h1></header>
+				<h2>¿Qué es un reset en CSS?</h2>
+				<p>Bajo mi punto de vista un reset para CSS son una serie de parámetros que incluimos en la hoja de estilo de nuestro web site para evitar esas incomodas reglas que pone cada explorador, a la hora de diseñar un sitio nos complican un poco la vida ya que cada explorador incluye las suyas propias y además no son iguales entre sí. Es 100% recomendable siempre usar un reset para así estandarizar el diseño al máximo de exploradores posibles.</p>
+
+				<code>
+					<div>
+						<div>
+							<div><p>
+								En este caso estamos seleccionado todos los selectores a los cuales les vamos a aplicar un formato el cual se comvertirá en estandar para todos los exploradores que usemos para visializar la página web.
+							</p></div>
+							<pre>
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	}
+							</pre>
+					</div>
+					<div>
+						<div><p>Para esta parte aplicaremos la propiedad display block a gran parte de las etiquetas semánticas y alguna que otra que queremos que se comporte por defecto en bloque.</p></div>
+					
+					<pre>
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+	display: block;
+	}
+				</pre>
+				</div>
+				<div>
+					<div><p>Bajo mi punto de vista todas las propiedades que se marcan en este reset desde "body" hasta "table" me gusta definirlas en el momento ya que se me puede dar el caso de que requiera otro estilo diferente y no pueda aplicar el mismo por culpa del reset inicial.</p></div>
+					<pre>
+	body {
+	line-height: 1;
+	}
+
+	ol, ul {
+	list-style: none;
+	}
+
+	blockquote, q {
+	quotes: none;
+
+	}
+
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+	content: '';
+	content: none;
+	}	
+
+	table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+					</pre>
+
+</div>
+</div>
+</code>
+<footer><p> Reset CSS diseñado por <span>Eric A. and Kathryn S. Meyer.</span></p></footer>
+</article>
+<article>
+	<header><h1>Autoprefixers</h1></header>
+	<h2>¿Qué es un autoprefixer?</h2>
+	<p>A mi entender un <span>"Autoprefixers"</span> es una pequeña aplicación web o algún tipo de Add-on/Plugin para tu IDE/herramienta de diseño el cual agrega de forma automática los prefijos de los motores de diseño de cada explorador los cuales aún no está estandarizado o implementado de forma permanente en su versión final.</p>
+	<div><ul>
+		<li><a href="https://es.wikipedia.org/wiki/WebKit" target="_blank">-webkit</a></li>
+		<li><a href="https://es.wikipedia.org/wiki/Anexo:Características_de_Mozilla_Firefox#Cumplimiento_de_est.C3.A1ndares_web" target="_blank">-moz</a></li>
+		<li><a href="https://en.wikipedia.org/wiki/Presto_(layout_engine)" target="_blank">-o</a></li>
+		<li><a href="https://es.wikipedia.org/wiki/Expression_Web" target="_blank">-ms</a></li>
+	</ul></div>
+	<p>Como ejemplo del mismo tenemos el website <a href="https://autoprefixer.github.io">autoprefixer</a> de gitnub</p>
+</article>
+</section>
+
+</main>
+<footer>
+
+</footer>
+</body>
+</html>
