@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Language" content="es-ES"/>
+	<meta name="Keywords" content=""/>
+	<meta name="Description" content=""/>
+	<meta name="Distribution" content="Global"/>
+	<meta name="author" content="">
+    <meta name="title" content="Práctica 13">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+	<title>Práctica 13</title>
+
+</head>
+<body>
+	<header>
+		<h1>Practica 13</h1>
+	</header>
+	<nav>
+		
+	</nav>
+	<main>
+		<section>
+			<article>
+				<header><h1></h1></header>
+				<h2>¿Qué son los font-awesome?</h2>
+				<p>El concepto que tengo yo sobre los font-awesome tiene 3 posibles contextos.</p>
+				<p>El primer contexto son los llamados archivos SVG los cuales no son otra cosa que una imagen vectorial la cual está definida bajo un lenguaje de marca estandarizado por W3C.</p>
+				<p>El segundo contexto que tengo sobre los font-awesome es el uso directo de la etiqueta <span>&ltsvg></span> la cual está igualmente definida como en el caso anterior, con la diferencia que el código del mismo está implícito en el mismo código fuente de la web</p>
+				<p>El tercer y último contexto que le doy es el uso de la galería de código abierto <span><a href="http://fontawesome.io"></a>Font-awesome Icon.</span>Con este un pequeño framework podemos implementar rápidamente en nuestro website una gran variedad de iconos los cuales en los 3 contextos son más rápidos de visualizar y los mismo pueden ser reescalados sin pérdida de calidad gracias a que son imágenes de tipo vectorial.</p>
+				<div>
+					<p>Ejemplo sin reescalado</p>
+					<img src="./IMG/chrome.png">
+					<img src="./IMG/chrome.svg">
+				</div>
+
+				<div>
+					<p>Ejemplo con reescalado</p>
+					<img src="./IMG/chrome.png">
+					<img src="./IMG/chrome.svg">
+				</div>
+				<p>Como podemos ver en el caso sin reescalado las imágenes se ven perfectamente, pero si aumentamos las mismas las versiones que no son tipo svg pierden calidad en cambio las imágenes tipo svg se reescalan sin ningún tipo de perdida en la calidad de imagen.</p>
+			</article>
+			<article>
+				<header><h1></h1></header>
+				<h2>¿Cómo incluir los tipos de letra de Google-Fonts?</h2>
+				<p>Para poder incluir una nueva fuente de Google-Fonts en nuestro sitio web existen dos métodos muy sencillos.</p>
+				<p>Para incluirla por el modo estándar deberemos de usar la etiqueta link en el head del HTML como se muestra en la sección del código inferior.</p>
+				<code>
+					<div>
+						<pre>
+
+	&ltlink href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+						</pre>
+					</div>
+				</code>
+				<p>Para hacerlo por el metodo @import deberemos de incluir la linea que vemos en el codigo infetrior entre la etiqueta &ltstyle> o tambien dentro del mismo archivo de estilo css de nuestro web site.</p>
+				<code>
+					<div>
+						<pre>
+
+	@import url('https://fonts.googleapis.com/css?family=Spectral+SC');
+						</pre>
+					</div>
+				</code>
+				<p>Una vez hayamos realizado uno de los dos métodos para invocar la nueva fuente tan solo deberemos de llamar a la fuente como podemos ver en el condigo inferior. Recuerda que este último código se debe incluir dentro de las etiquetas &ltlink> o dentro del mismo archivo css como en el caso anterior</p>
+				<code>
+					<div>
+						<pre>
+
+	font-family: 'Spectral SC', serif;
+						</pre>
+					</div>
+				</code>
+			</article>
+		</section>
+	</main>
+	<footer>
+		
+	</footer>
+</body>
+</html>

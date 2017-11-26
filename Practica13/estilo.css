@@ -20,7 +20,6 @@ time, mark, audio, video {
 }
 
 body{
-	width: 90%;
 	margin: auto;
 	background-color: #cfcfcf;
 }
@@ -83,6 +82,7 @@ code > div{
 	font-family: "Lucida Console";
 	width: 85%;
 	margin: 1em auto;
+	border-radius: 15px;
 }
 
 code div p, pre{
@@ -134,3 +134,16 @@ div ul li a{
 	font-weight: bold;
 }
 
+div img{
+	width: 32px;
+	padding: 15px 25px;
+}
+
+article div:nth-of-type(2) img{
+	width: 128px;
+}
+
+article div{
+	text-align: center;
+	margin: 10px auto;
+}
