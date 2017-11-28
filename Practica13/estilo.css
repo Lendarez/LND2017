@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Atomic+Age');
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -148,15 +150,88 @@ article p ~ div{
 	margin: 10px auto;
 }
 
-article br ~ p{
+p.fuente:first-of-type{
+	font-size: 2em;
+	font-family: 'Indie Flower', cursive;
+}
+p.fuente:last-of-type{
+	font-size: 2em;
+	font-family: 'Atomic Age', cursive;
+}
+
+div.flex{
+	display: flex;
+	background-color: #534E4A;
+	min-width: 600px;
+	min-height: 300px;
+	max-width: 80%;
+	margin: 20px auto;
+	padding: 10px;
+}
+
+div.flex > div:first-child{
+	background-color: #D9D250;
+	flex-grow: 1;
+}
+
+div.flex > div:nth-child(2){
+	flex-grow: 2;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+div.flex  > div:nth-child(2) > div:first-child{
+	height: 175px;
+	flex-grow: 1;
+	display: flex;
 
 }
 
-@import url('https://fonts.googleapis.com/css?family=Atomic+Age');
-
-article div > p:last-of-type{
-	font-family: 'Atomic Age';
+div.flex  > div:nth-child(2) > div:first-child div{
+	flex-grow: 1;
+	flex-basis: auto;
+	margin-bottom: 2.5px;
 }
 
+div.flex  > div:nth-child(2) > div:first-child div:first-child{
+	background-color: #6B8E00;
+}
 
+div.flex  > div:nth-child(2) > div:first-child div:nth-child(even){
+	background-color: #C46D26;
+	margin-right: 10px;
+	margin-left: 10px;
+}
 
+div.flex  > div:nth-child(2) > div:first-child div:last-child{
+	background-color: #0E448E;
+}
+
+div.flex  > div:nth-child(2) > div:last-child{
+	height: 125px;
+	flex-grow: 1;
+	display: flex;
+}
+
+div.flex  > div:nth-child(2) > div:last-child div{
+	background-color: white;
+	flex-grow: 1;
+	flex-basis: auto;
+	margin-top: 5px;
+}
+
+div.flex  > div:nth-child(2) > div:last-child div:first-child{
+	background-color: #C46D26;
+	margin-right: 5px;
+}
+
+div.flex  > div:nth-child(2) > div:last-child div:last-child{
+	background-color: #D9D250;
+	margin-left: 5px;
+}
+
+div.flex > div:last-child{
+	background-color: #D293CC;
+	flex-grow: 1;
+
+}
