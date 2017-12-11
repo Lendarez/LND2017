@@ -25,7 +25,6 @@ body > header > h1 {
 	color: #0E7DB2;
 	transform: rotate(-5deg);
 	text-align: center;
-
 	margin-bottom: 50px;
 	text-shadow: 1px 1px #111,
 				 2px 2px #111,
@@ -48,6 +47,10 @@ body > header > h1 {
 				 19px 19px #111,
 				 20px 20px #111;
 }
+p {
+	font-size: 1.1em;
+}
+
 body {
 	overflow-x: hidden;
 	background: linear-gradient(
@@ -69,22 +72,26 @@ main > section > header h1 {
 	font-weight: bold;
 	border-radius: 25px 25px 0px 0px;
 	background: linear-gradient(
-				#006064,
-				#00838f,
-				#039be5,
-				#42a5f5
+				#002f6c,
+				#004c8c,
+				#005b9f,
+				#006db3,
+				#007ac1,
+				#0086c3,
+				#0093c4,
+				#4ba3c7,
+				#82b3c9,
+				#afc2cb
 				);
-	border-bottom-color: black;
+	border-bottom-color: #494949;
 	border-bottom-style: solid;
 	border-bottom-width: 15px;
 }
 
 main > section > div {
 	background: linear-gradient(
-				#000000,
-				#000000,
-				#000000,
-				#000000,
+				#494949,
+				#494949,
 				#212121
 				);
 	padding-bottom: 10px;
@@ -169,3 +176,13 @@ article a {
 	font-size: 1.1em;
 }
 
+.articulo_lista div {
+	width: 90%;
+	margin:auto;
+	padding: 10px;
+}
+
+.articulo_lista div span {
+	font-weight: bold;
+	font-size: 1.1em;
+}
