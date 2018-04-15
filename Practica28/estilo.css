@@ -1,0 +1,188 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: content-box;
+}
+
+body > header > h1 {
+	font-size: 5em;
+	color: #0E7DB2;
+	transform: rotate(-5deg);
+	text-align: center;
+	margin-bottom: 50px;
+	text-shadow: 1px 1px #111,
+				 2px 2px #111,
+				 3px 3px #111,
+				 4px 4px #111,
+				 5px 5px #111,
+				 6px 6px #111,
+				 7px 7px #111,
+				 8px 8px #111,
+				 9px 9px #111,
+				 10px 10px #111,
+				 11px 11px #111,
+				 12px 12px #111,
+				 13px 13px #111,
+				 14px 14px #111,
+				 15px 15px #111,
+				 16px 16px #111,
+				 17px 17px #111,
+				 18px 18px #111,
+				 19px 19px #111,
+				 20px 20px #111;
+}
+p {
+	font-size: 1.1em;
+}
+
+body {
+	overflow-x: hidden;
+	background: linear-gradient(
+				#757575,
+				#e0e0e0
+				);
+}
+
+main > section {
+	max-width: 90%;
+	margin: auto;
+}
+
+main > section > header h1 {
+	margin: 0;
+	font-size: 3em;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+	border-radius: 25px 25px 0px 0px;
+	background: linear-gradient(
+				#002f6c,
+				#004c8c,
+				#005b9f,
+				#006db3,
+				#007ac1,
+				#0086c3,
+				#0093c4,
+				#4ba3c7,
+				#82b3c9,
+				#afc2cb
+				);
+	border-bottom-color: #494949;
+	border-bottom-style: solid;
+	border-bottom-width: 15px;
+}
+
+main > section > div {
+	background: linear-gradient(
+				#494949,
+				#494949,
+				#212121
+				);
+	padding-bottom: 10px;
+}
+
+main > section article {
+	max-width: 95%;
+	margin: auto;
+	padding: 10px;
+	background: -webkit-linear-gradient(top,
+				rgba(245,245,245,0.6),
+				rgba(195,195,195,0.2)
+				);
+	margin-bottom: 20px;
+}
+
+main > section article h2 {
+	padding-bottom: 15px;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+main > section article:nth-child(3) div{
+	text-align: center;
+	margin-top: 10px;
+}
+
+main > section article:nth-child(2) div{
+	display: flex;
+	justify-content: space-around;
+	flex-grow: 0;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+}
+
+main > section article:nth-child(2) div > div{
+	flex-basis: 200px;
+	height: 200px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	filter: blur(5px);
+	transition: 1s; 
+}
+
+main > section article:nth-child(2) div > div:hover{
+	filter: none;
+	flex-basis:300px;
+	height: 300px;
+}
+
+main > section article:nth-child(2) div > div h3 {
+	margin-top: 25px;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+main > section article:nth-child(2) div > div:last-of-type h3 {
+	margin-top: 5px;
+}
+
+main > section article:nth-child(2) div > div:first-of-type{
+	background-image: url(./IMG/canarias7.png);
+}  
+
+main > section article:nth-child(2) div > div:nth-child(2){
+	background-image: url(./IMG/RTVC.png);
+}
+
+main > section article:nth-child(2) div > div:nth-child(3){
+	background-image: url(./IMG/anocero.png);
+}
+
+main > section article:nth-child(2) div > div:nth-child(4){
+	background-image: url(./IMG/BOC.png);
+}
+
+article a {
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+.articulo_lista div {
+	width: 90%;
+	margin:auto;
+	padding: 10px;
+}
+
+.articulo_lista div span {
+	font-weight: bold;
+	font-size: 1.1em;
+}
