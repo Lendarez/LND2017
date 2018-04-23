@@ -1,0 +1,15 @@
+input[type='button']{
+	margin-right: 10px;
+	width: 70px;
+}
+input[type='button']:last-of-type {
+	margin: 0px;
+}
+#contenido {
+	text-align: center;
+	width: 750px;
+	padding: 10px;
+	margin: auto;
+	background-color: silver;
+	border-radius: 10px;
+}
