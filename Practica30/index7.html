@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+<p id="p"></p>
+<script>
+var bebidas = new Array();
+var bebidasQueMeGustan = new Array();
+
+bebidas = ["Coca-Cola","Heineken","Dorada"]
+
+for (var i = 0; i <= bebidas.length -1 ; i++) {
+
+	teGusta = confirm("¿Te gustan la "+ bebidas[i] + "?")
+
+	if (!teGusta) continue;
+	bebidasQueMeGustan.push(bebidas[i])
+}
+document.getElementById("p").innerHTML = "Entonces te gustan "
+	+bebidasQueMeGustan.length+" bebidas, que son: "+bebidasQueMeGustan;
+</script>
+
+</body>
+</html>

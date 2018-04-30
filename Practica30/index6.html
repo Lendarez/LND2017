@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+
+<p id="p"></p>
+
+<script>
+function normalizar(string){
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+var nombres = new Array();
+var entrada = prompt('¿Qué nombre quieres agregar a la lista? \n '
++'Escribe "Fin" cuando quieras finalizar la inserción de nombres a la lista.');
+
+while(normalizar(entrada) != "Fin") {
+	nombres.push(normalizar(entrada));
+	entrada = prompt('¿Qué nombre quieres agregar a la lista? \n '+
+	'Escribe "Fin" cuando quieras finalizar la inserción de nombres a la lista.');
+}
+document.getElementById("p").innerHTML = nombres;
+</script>
+
+</body>
+</html>

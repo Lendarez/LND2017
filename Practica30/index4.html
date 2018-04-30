@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Array generado</h1>
+<p id="n"></p>
+<hr>
+<h1>Array mostrado con for... of...</h1>
+<p id="of"></p>
+<hr>
+<h1>Array mostrado con for... in...</h1>
+<p id="in"></p>
+<hr>
+<h1>Array mostrado con forEach</h1>
+<p id="each"></p>
+
+<script>
+var n = new Array();
+var nAleatorio;
+
+for (var i = 0 ; i < 50; i++) {
+	nAleatorio = parseInt((Math.random()*100+1));
+	n.push(nAleatorio);
+}
+var nOrdenado = n.sort((a, b) => a - b );
+
+document.getElementById("n").innerHTML = nOrdenado
+
+for (let numeroOf of n) {
+  
+  document.getElementById("of").innerHTML += " " + numeroOf;
+}
+
+for (var numeroIn in n) {
+   document.getElementById("in").innerHTML += " " + n[numeroIn];
+}
+
+nOrdenado.forEach(meter);
+
+function meter(nEach) {
+    document.getElementById("each").innerHTML += " " + nEach;
+}
+
+</script>
+
+</body>
+</html>
