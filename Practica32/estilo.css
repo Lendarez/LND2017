@@ -1,0 +1,32 @@
+hr {
+  margin: 0;
+  padding: 0;
+  width: 992px;
+}
+hr:last-of-type {
+  margin-top: 499px;
+}
+
+div {
+  width: 985px;
+  margin: auto;
+}
+
+div div {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+}
+
+#izq {
+  border-left: 1px solid black;
+}
+
+#dch {
+  border-right: 1px solid black;
+  left: calc(100%/2);
+}
+
+img {
+  position: absolute;
+}
